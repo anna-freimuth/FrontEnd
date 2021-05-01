@@ -1,0 +1,19 @@
+body{
+    background-color:#FAFBFF;
+    margin-top: 20px;
+}
+
+.buttons {
+    justify-content: center;
+    display: flex;
+}
+
+.nav.nav-tabs {
+    background-color:#D9E2F7 ;
+    margin-top: 20px;
+
+
+}
+#content{
+   background-color: #FCD7CF;
+}
