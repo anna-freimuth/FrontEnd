@@ -5,21 +5,26 @@
     <title>Users information</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&family=Raleway:wght@200&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section>
     <div class="buttons" >
-        <div class="collection-item" id="userList" text="${user.name}">
-
-        </div>
+        <div class="collection-item" id="userList" text="${user.name}"></div>
     </div>
 </section>
 
 <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
     <div>
-    <ul class="nav nav-tabs" >
-        <li class="nav-item">
+    <ul class="nav nav-tabs"  >
+        <li class="nav-item ">
             <a class="nav-link active" href="#" id="userInfo">Info</a>
         </li>
         <li class="nav-item">
@@ -35,6 +40,9 @@
     </div>
 
     <div id="content">
+    </div>
+            </div>
+        </div>
     </div>
 </section>
 
