@@ -34,3 +34,6 @@ button {
     color:white;
     background: linear-gradient(to bottom,  #D0EEFC 0%, #225770 100%);
 }
+a:hover{
+    color: white;
+}
