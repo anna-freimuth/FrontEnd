@@ -1,0 +1,39 @@
+body {
+    margin-top: 20px;
+    background:  #D0EEFC
+}
+
+.collection-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button {
+    color:#225770;
+    background: linear-gradient(to bottom,  #D0EEFC 0%, #225770 100%);
+}
+
+.nav.nav-tabs {
+    background-color: #225770;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-family: Raleway, sans-serif;
+}
+
+#content {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to top,  #D0EEFC 0%, #225770 100%);
+}
+.nav-tabs .nav-link.active {
+    color:white;
+    background: linear-gradient(to bottom,  #D0EEFC 0%, #225770 100%);
+}
+a:hover{
+    color: white;
+}
