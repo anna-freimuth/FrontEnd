@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 
-export default({posts, likesHandle,dislikesHandle,dislikesRating})=>{
+export default({posts, likesHandle,dislikesHandle})=>{
     return(
         <ul>
             {posts.map(post=>(
@@ -12,7 +12,6 @@ export default({posts, likesHandle,dislikesHandle,dislikesRating})=>{
                         title={post.title}
                         announcement={post.announcement}
                         rating={post.rating}
-                        dislikesRating={dislikesRating}
                         likes={post.likes}
                         dislikes={post.dislikes}
                         likesHandle={likesHandle}

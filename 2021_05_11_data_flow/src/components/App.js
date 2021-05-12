@@ -73,7 +73,6 @@ export default () => {
                 posts={posts}
                 likesHandle={likesHandle}
                 dislikesHandle={dislikesHandle}
-                dislikeRating={dislikeRating}
                 />
         </div>
     )
