@@ -1,7 +1,6 @@
 import React from "react";
-import ReviewRating from "./ReviewRating"
 
-export default ({id,sender,text,rate})=>{
+export default ({sender,text,rate})=>{
     return(
         <div>
         <h6>{sender}</h6>

@@ -42,15 +42,14 @@ export default () => {
 
     return (
         <div>
-            <ReviewRating
-                reviewScore={averageReviewScore}
-                />
-            <ReviewForm
-                addReview={addReview}
-               />
             <MyContextFunction.Provider value={{
                 averageReviewScore
             }}>
+                <ReviewRating/>
+                <ReviewForm
+                    addReview={addReview}
+                />
+
                 <ReviewsList
                     reviews={reviews}
                 />

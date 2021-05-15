@@ -10,7 +10,7 @@ export default ()=>{
             <h4>Author: Kris Lan</h4>
             <h5>Year: 1995</h5>
             <button>
-                    Average review score:{context.averageReviewScore}  </button>
+                    Average review score:{context.averageReviewScore()}  </button>
         </div>
     )
 }

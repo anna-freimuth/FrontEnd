@@ -7,7 +7,6 @@ export default ({reviews}) => {
             {reviews.map(review => (
                 <li key={review.id}>
                     <Review
-                        id={review.id}
                         sender={review.sender}
                         text={review.text}
                         rate={review.rate}

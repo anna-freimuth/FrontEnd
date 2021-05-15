@@ -1,6 +1,4 @@
-import React, {useContext, useState} from "react";
-import {MyContextFunction} from "./App";
-
+import React, {useState} from "react";
 
 const ReviewForm=({addReview}) =>{
 
