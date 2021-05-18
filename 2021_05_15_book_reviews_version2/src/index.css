@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn.btn-sm.btn-success{
+  background-color:#8DE2EB;
+}
+.mb-3{
+  background-color: #8DE2EB;
+}
+.card-body{
+  background-color:#E8D9C6 ;
+  font-family: "Noto Sans";
+}
+.card-body-1{
+  border-radius: 15px 50px;
+  background-color:  #8DE2EB;
+  text-align: center;
+  font-family: "Noto Sans";
+}
