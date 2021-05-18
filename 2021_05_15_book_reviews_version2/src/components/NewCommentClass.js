@@ -91,6 +91,5 @@ export default class NewCommentClass extends React.Component {
                         </div>)
                 }
                 }</BookContext.Consumer>)
-
     }
 }
