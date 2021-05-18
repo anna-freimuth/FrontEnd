@@ -77,7 +77,7 @@ export default class NewCommentClass extends React.Component {
                                             value={this.state.rating}
                                             onChange={this.onChangeHandle}
                                     >
-                                        <option>Chose a score</option>
+                                        <option>Choose a score</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
