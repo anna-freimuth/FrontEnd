@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card{
+  border-color:darkslateblue;
+  border-radius:10px;
+  background-color: antiquewhite;
+}
+.card-title{
+  color:darkslateblue;
+  text-align: center;
+  font-family: "Noto Sans";
+}
+img{
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  font-family: "Noto Sans";
+  color:darkslateblue;
+}
+
+.btn.btn-primary{
+  background-color:darkslateblue;
+}
