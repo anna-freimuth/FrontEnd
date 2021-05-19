@@ -2,7 +2,7 @@ import React from "react";
 
 const Meal=({meal})=>{
     return(
-        <div className="col-md-3 col-sm-4 col-6 mt-3">
+        <div className="col-md-3 col-sm-4 col-6 mt-3 mb-3">
             <div className="card">
                 <img src={meal.strMealThumb} alt="meal"/>
                 <div className="card-body">
