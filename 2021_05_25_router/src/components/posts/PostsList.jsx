@@ -3,8 +3,8 @@ import {userContext} from "../App";
 import Loading from "../Loading";
 import {URL} from "../../data";
 
-const ToDoList = () => {
-    const [todoList, setTodoList] = useState([])
+const PostsList = () => {
+    const [postsList, setPostsList] = useState([])
     const context = useContext(userContext)
 
     useEffect(() => {
@@ -16,17 +16,17 @@ const ToDoList = () => {
     }, [context.user]);
 
     const fetchingData = () => {
-        fetch(`${URL}todos?userId=${context.user.id}`)
+        fetch(`${URL}posts?userId=${context.user.id}`)
             .then(data => data.json())
-            .then(json => setTodoList(json))
+            .then(json => setPostsList(json))
     }
 
-    const renderTodoList = () => {
-        if ( !todoList.length ) {
+    const renderPostsList = () => {
+        if ( !postsList.length ) {
             return (<Loading />)
         }
         return (
-            todoList.map(item => (<div id={'todo_' + item.id} key={item.id}>{item.title}</div>))
+            postsList.map(item => (<div id={'post_' + item.id} key={item.id}>{item.title}</div>))
         )
     }
 
@@ -34,8 +34,8 @@ const ToDoList = () => {
         <Fragment>
             <div className="col-md-6">
             <div className="card">
-            {renderTodoList()}
-        </div>
+            {renderPostsList()}
+            </div>
             </div>
         </Fragment>
 
@@ -43,4 +43,4 @@ const ToDoList = () => {
 
 }
 
-export default ToDoList
+export default PostsList

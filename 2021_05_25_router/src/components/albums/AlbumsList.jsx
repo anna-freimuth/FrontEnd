@@ -3,8 +3,8 @@ import {userContext} from "../App";
 import Loading from "../Loading";
 import {URL} from "../../data";
 
-const ToDoList = () => {
-    const [todoList, setTodoList] = useState([])
+const AlbumsList = () => {
+    const [albumsList, setAlbumsList] = useState([])
     const context = useContext(userContext)
 
     useEffect(() => {
@@ -16,26 +16,26 @@ const ToDoList = () => {
     }, [context.user]);
 
     const fetchingData = () => {
-        fetch(`${URL}todos?userId=${context.user.id}`)
+        fetch(`${URL}albums?userId=${context.user.id}`)
             .then(data => data.json())
-            .then(json => setTodoList(json))
+            .then(json => setAlbumsList(json))
     }
 
-    const renderTodoList = () => {
-        if ( !todoList.length ) {
-            return (<Loading />)
+    const renderAlbumsList = () => {
+        if (!albumsList.length) {
+            return (<Loading/>)
         }
         return (
-            todoList.map(item => (<div id={'todo_' + item.id} key={item.id}>{item.title}</div>))
+            albumsList.map(item => (<div id={'album_' + item.id} key={item.id}>{item.title}</div>))
         )
     }
 
     return (
         <Fragment>
-            <div className="col-md-6">
-            <div className="card">
-            {renderTodoList()}
-        </div>
+            <div className="col-md-3">
+                <div className="card">
+                    {renderAlbumsList()}
+                </div>
             </div>
         </Fragment>
 
@@ -43,4 +43,4 @@ const ToDoList = () => {
 
 }
 
-export default ToDoList
+export default AlbumsList
