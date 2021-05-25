@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {userContext} from "./App";
 import Loading from "./Loading";
+import {URL} from "../data";
 
 const User = () => {
     const [users, setUsers] = useState(null)
@@ -10,7 +11,7 @@ const User = () => {
     }, [])
 
     const fetchingUsers = () => {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch(`${URL}users`)
             .then(response => response.json())
             .then(json => setUsers(json))
     }
