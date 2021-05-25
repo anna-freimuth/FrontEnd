@@ -15,29 +15,35 @@ const User = () => {
             .then(json => setUsers(json))
     }
 
-    const cntxt = useContext(userContext)
+    const context = useContext(userContext)
 
     const renderUsers = () => {
         if (!users) return (<Loading/>)
         return (
-            users.map(user => (<button key={user.id} onClick={() => cntxt.changeUser(user)}>{user.username}</button>))
+            users.map(user => (<button key={user.id} onClick={() => context.changeUser(user)}>{user.username}</button>))
         )
     }
 
     const renderActiveUser = () => {
-        if (!cntxt.user) return null
+        if (!context.user) return null
         return (
-            <div>
+            <div className="col-md-3">
+            <div className="card">
                 <hr/>
-                {cntxt.user.name} ({cntxt.user.email})
+                <h5 className="card-title">
+                {context.user.name}</h5>
+                    ({context.user.email})
                 <hr/>
+            </div>
             </div>
         )
     }
 
     return (
         <section>
+            <div className="collection-item">
             {renderUsers()}
+        </div>
             {renderActiveUser()}
         </section>
     )
