@@ -33,7 +33,7 @@ const AlbumsList = () => {
     return (
         <Fragment>
             <div className="container w-auto mx-auto">
-            <div className="col-md-8 align-content-center">
+            <div className="col-md-6 align-content-center">
                 <div className="card">
                     {renderAlbumsList()}
                 </div>
