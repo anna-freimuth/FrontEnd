@@ -8,18 +8,25 @@ body {
 }
 
 .card-title {
-    color: midnightblue;
+    color: #EBE9CC;
 }
 .col-md-3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.card {
-    text-align: center;
-    background-color: lavender;
-    font-family: "Noto Sans";
+
+.container.w-auto.mx-auto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.card.bg-success.my-3.w-50.mx-auto{
+    color:whitesmoke;
+    text-align: center;
+    background-color: #F28768 !important;
+}
+
 .collection-item {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +36,15 @@ body {
     margin-top: 10px;
 }
 button{
-    color: darkslateblue;
-    background-color: antiquewhite;
+    color: #EBE9CC;
+    background-color: #8F69DB;
+}
+
+.list-group a{
+   color: #8F69DB;
+    text-align: center;
+}
+.card{
+    background-color: #F28768;
+    color: whitesmoke;
 }
