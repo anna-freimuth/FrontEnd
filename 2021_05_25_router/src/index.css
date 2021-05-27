@@ -48,3 +48,7 @@ button{
     background-color: #F28768;
     color: whitesmoke;
 }
+.container-md.my-3.w-50.mx-auto{
+    display: flex;
+    justify-content: center;
+}
