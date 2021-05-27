@@ -28,14 +28,13 @@ const User = () => {
     const renderActiveUser = () => {
         if (!context.user) return null
         return (
-            <div className="col-md-3">
-            <div className="card">
+            <div className="card bg-success my-3 w-50 mx-auto">
                 <hr/>
                 <h5 className="card-title">
                 {context.user.name}</h5>
-                    ({context.user.email})
+                    email: {context.user.email}
                 <hr/>
-            </div>
+
             </div>
         )
     }

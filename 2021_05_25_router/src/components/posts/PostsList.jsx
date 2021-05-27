@@ -32,11 +32,13 @@ const PostsList = () => {
 
     return (
         <Fragment>
-            <div className="col-md-6">
+            <div className="container w-auto mx-auto">
+                <div className="col-md-8 align-content-center">
             <div className="card">
             {renderPostsList()}
             </div>
             </div>
+                </div>
         </Fragment>
 
     )
