@@ -3,8 +3,8 @@ import React, {Fragment} from "react";
 import Navigation from "./Navigation";
 import Pages from "../layouts/Pages";
 
-const App = () =>{
 
+const App = () =>{
 
     return(
         <Fragment>

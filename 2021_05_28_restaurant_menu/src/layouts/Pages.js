@@ -1,15 +1,24 @@
 import React from "react";
-import {Switch,Route} from "react-router-dom";
-import Drinks from "../components/Drinks"
+import {Route, Switch} from "react-router-dom";
+import MealApp from "../components/meals/MealApp";
+import DrinkApp from "../components/drinks/DrinkApp";
+import Home from "../components/home/Home";
 
 const Pages = () => {
-    return(
+    return (
         <Switch>
+            <Route exact={true} path="/">
+                <Home/>
+            </Route>
             <Route exact={true} path="/drinks">
-                <Drinks />
+                <DrinkApp/>
+            </Route>
+            <Route exact={true} path="/meals">
+                <MealApp/>
             </Route>
         </Switch>
     )
 }
+
 
 export default Pages
