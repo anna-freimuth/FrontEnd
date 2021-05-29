@@ -10,7 +10,7 @@ const Home = () => {
                 </h5>
                 <div className="card-body">
                     <p>
-                        Monday-Friday : 12 am - 11 pm</p>
+                        Monday-Friday: 12 am - 11 pm</p>
                     <p>Saturday-Sunday: 10 am - 12 pm</p>
                 </div>
             </div>
