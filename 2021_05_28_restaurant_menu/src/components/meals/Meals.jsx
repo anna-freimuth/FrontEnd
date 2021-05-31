@@ -5,7 +5,7 @@ import {UrlMeals} from "../../data";
 
 const Meals = ({category}) => {
 
-    const [meals, setMeals] = useState(null)
+    const [meals, setMeals] = useState([])
     const [error, setError] = useState(false)
     const [isLoading, setIsLoading] = useState(true);
 
@@ -17,7 +17,7 @@ const Meals = ({category}) => {
     useEffect(() => {
         fetch(`${UrlMeals}filter.php?c=${category}`)
             .then(response => response.json())
-            .then(data => setMeals(data.meals ?? []))
+            .then(data => setMeals(data.meals))
             .then(() => setIsLoading(false))
 
             .catch(error => {
